@@ -12,17 +12,17 @@ import { bookRouter } from './routes/book.js';
 import { Book } from './models/Book.js';
 import { Student } from './models/Student.js';
 import { Admin } from './models/Admin.js';
-
+dotenv.config();
 
 
 const app=express()
 app.use(express.json())
 app.use(cors({
-  origin:['http://localhost:5173'],
+  origin:process.env.CLIENT_URL,
   credentials:true
 }))
 app.use(cookieParser())
-dotenv.config();
+
 
 app.use('/auth',AdminRouter)
 app.use('/student',studentRouter)
