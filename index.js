@@ -13,7 +13,7 @@ import { Book } from './models/Book.js';
 import { Student } from './models/Student.js';
 import { Admin } from './models/Admin.js';
 dotenv.config();
-const allowedOrigin = 'https://book-spot-5g3uc0jko-sk-anaruls-projects.vercel.app';
+const allowedOrigin = 'https://book-spot-sk.vercel.app/';
 const app=express()
 app.use(express.json())
 app.use(cors({
