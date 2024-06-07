@@ -17,7 +17,7 @@ const allowedOrigin = 'https://book-spot-5g3uc0jko-sk-anaruls-projects.vercel.ap
 const app=express()
 app.use(express.json())
 app.use(cors({
-  origin:allowOrigin,
+  origin:allowedOrigin,
   credentials:true
 }))
 app.use(cookieParser())
